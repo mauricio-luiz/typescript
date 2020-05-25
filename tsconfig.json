@@ -4,7 +4,8 @@
         "outDir": "app/js",
         "noEmitOnError": true, //Não deixa gerar o arquivo ate que o ts esteja correto
         "noImplicitAny": true,
-        "removeComments": true
+        "removeComments": true,
+        "module": "system"
     },
     "include": [
         "app/ts/**/*"
