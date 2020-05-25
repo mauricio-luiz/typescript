@@ -3,7 +3,8 @@
         "target": "es6",
         "outDir": "app/js",
         "noEmitOnError": true, //Não deixa gerar o arquivo ate que o ts esteja correto
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "removeComments": true
     },
     "include": [
         "app/ts/**/*"
