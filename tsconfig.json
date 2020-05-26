@@ -5,7 +5,8 @@
         "noEmitOnError": true, //Não deixa gerar o arquivo ate que o ts esteja correto
         "noImplicitAny": true,
         "removeComments": true,
-        "module": "system"
+        "module": "system",
+        "strictNullChecks": true
     },
     "include": [
         "app/ts/**/*"
