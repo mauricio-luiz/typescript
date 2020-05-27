@@ -9,7 +9,7 @@ export abstract class View<T>{
         this._elemento = $(seletor);
         this._escapar = escapar;
     }
-
+    
     update(model: T): void{
         let template = this.template(model);
         if(this._escapar)
