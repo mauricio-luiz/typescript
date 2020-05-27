@@ -25,8 +25,7 @@ System.register(["../views/index", "../models/index"], function (exports_1, cont
                 adiciona(event) {
                     event.preventDefault();
                     let data = new Date(this._inputData.val().replace(/-/g, ','));
-                    console.log(this._ehDiaUtil(data));
-                    if (this._ehDiaUtil(data)) {
+                    if (!this._ehDiaUtil(data)) {
                         this._mensagemView.update('Somente negociações em dias úteis, por favor');
                         return;
                     }
