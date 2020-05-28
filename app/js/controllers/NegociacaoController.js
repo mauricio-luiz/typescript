@@ -28,8 +28,7 @@ System.register(["../views/index", "../models/index", "../helpers/decorators/ind
                     this._mensagemView = new index_1.MensagemView('#mensagemView', true);
                     this._negociacoesView.update(this._negociacoes);
                 }
-                adiciona(event) {
-                    event.preventDefault();
+                adiciona() {
                     let data = new Date(this._inputData.val().replace(/-/g, ','));
                     if (!this._ehDiaUtil(data)) {
                         this._mensagemView.update('Somente negociações em dias úteis, por favor');
